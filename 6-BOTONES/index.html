@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Botones</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"><!--mejora los colores de todo el arch-->
+
+</head>
+<body>
+    <br>
+
+    <div class="container-fluid"><!-- fluid para que abarque toda la pagina-->
+        <div class="row">
+            <div class="col-md-3">
+                <!--lg:para el tama;o..... block:para crear blockes de botones (depende del tama;o especificado, como nosotros pusimos 3, toma las 3 columnas para c/btn)-->
+                <button class="btn btn-lg btn-block btn-default" disabled>Default</button><!--especificar btn por defecto, cuando quieres que haga tal accion-->
+                <button class="btn btn-lg btn-block btn-primary">Primary</button><!--accion primaria, accion importante-->
+                <button class="btn btn-lg btn-block btn-success">Success</button><!--accion positiva-->
+                <button class="btn btn-lg btn-block btn-info">Info</button><!--mensaje informativo o alerta-->
+                <button class="btn btn-lg btn-block btn-warning">Warning</button><!--Alerta-->
+                <button class="btn btn-lg btn-block btn-danger">Danger</button><!--accion negativa-->
+                <button class="btn btn-lg btn-block btn-link">Link</button><!--si quieres transformar un boton a un elemento a (simulado)-->
+            </div>
+
+            <div class="col-md-3">
+                    <button class="btn btn-lg btn-block btn-default active">Default</button><!--active simula al darle click a un btn-->
+                    <button class="btn btn-lg btn-block btn-primary active">Primary</button>
+                    <button class="btn btn-lg btn-block btn-success active">Success</button>
+                    <button class="btn btn-lg btn-block btn-info active">Info</button>
+                    <button class="btn btn-lg btn-block btn-warning active">Warning</button>
+                    <button class="btn btn-lg btn-block btn-danger active">Danger</button>
+                    <button class="btn btn-lg btn-block btn-link active">Link</button>
+                </div>
+    
+                <!--etiquetas que puedo utilizartsh__ siempre y cuando tengan las clases que se han trabajado para que funcionen como un btn-->
+                <button></button>
+                <a href=""></a>
+                <input type="text" class="button">
+
+            <div class="col-md-3">
+                <a href="#" class="btn btn-default">Default</a>
+                <a href="#" class="btn btn-primary" disabled>Primary</a><!--desabilitar los btns-->
+                <a href="#" class="btn btn-success">Success</a>
+                <a href="#" class="btn btn-info">Info</a>
+                <a href="#" class="btn btn-warning">Warning</a>
+                <a href="#" class="btn btn-danger">Danger</a>
+                <a href="#" class="btn btn-link">Link</a>
+            </div>
+        </div>
+    </div>
+
+    <!--se tienen que trabajar los colores, que no sean muy especificos para una accion. Por ej., si los botones no tienen texto y solo tienen iconos, tratar de que no sean muy represntativos los colores. EN LOS SCREEM READERS NO HAY COLORES Y SE TIENEN QUE USAR LA CLASE QUE YA VIMOS PARA ESOS CASOS (sr-only)-->
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
