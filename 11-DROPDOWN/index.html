@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Dropdowns</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+
+</head>
+<body>
+   
+    <div class="container">
+        <br>
+        <div class="dropdown">
+            <!--type- especificar que es un btn
+            data-toggle- es para bootstrap
+            aria-extended- -->
+            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownmmenu1" data-toggle="dropdown" aria-extended="true"><!--podemos cambiarle el color con primary o el de succes, etc-->
+                Dropdown
+                <span class="caret"></span>
+                <!--caret es uno de los pocos btn de btsp que se agrega con una sola palabra (es para una flechita)-->
+
+            </button>
+
+            <!--role no tiene cambio visual pero es import para alg disp mov...para especificar que va a ser un submenu
+            aria-labelledby ponemos el mismo nombre que le pusimos al id-->
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">
+
+                <!--para tener secciones o dif parts en nuestro menu-->
+                <li role="presentation" class="dropdown-header">Header</li>
+
+                <li class="divider"></li><!--agrega una linea para dividir-->
+
+                <!--role opcional, pero deberias agregarlo.... no hay cambio en vista-->
+                <li role="presentation"><a role="item" href="#">Item #1</a></li>
+                <li role="presentation"><a role="item" href="#">Item #2</a></li>
+                <li role="presentation"><a role="item" href="#">Item #3</a></li>
+                
+                <li class="divider"></li>
+
+                <li role="presentation" class="disabled"><a role="item" href="#">Item #4</a></li>
+                <!--li*4>a[href="#"]{Item #$}-->
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
