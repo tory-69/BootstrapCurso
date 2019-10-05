@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario estandar</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <br>
+        <form action="" class="">
+        
+            <div class="form-group"><!--encierra elemento y da un espacio a lo siguiente, separa de lo demas...encierra dos contenido y da espacio por debajo-->
+                <label for="nombre">Nombre:</label>
+                <input class="form-control" id="" type="text" placeholder="Nombre:"><!--form-control, nos da un formato mas nice, con bordes redondeados, padding y estado de focus dentro de ellos... para donde tenemos que elegir una opcion en los tipo select, textarea e input-->
+            </div>
+
+            <!--Controles soportados por BOOTSTRAP : text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, color....en donde puedo aplicar el form-control-->
+
+        <div class="form-group has-error">
+            <label for="option" class="control-label">Elige una opcion:</label>
+            <select class="form-control" name="" id="option">
+                <option value="">Opcion #1</option>
+                <option value="">Opcion #2</option>
+                <option value="">Opcion #3</option>
+                <option value="">Opcion #4</option>
+                <option value="">Opcion #5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje:"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="archivo">Archivo:</label>
+            <input type="file" id="archivo"><p class="help-block">Maximo 50MB</p>
+        </div>
+
+        <button class="btn btn-primary">Enviar</button>
+
+        </form>
+    </div>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
