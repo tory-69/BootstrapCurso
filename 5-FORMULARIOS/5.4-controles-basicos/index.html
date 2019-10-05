@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Controles basicos</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <br>
+            <div class="form-group">
+                <label>Label basica</label>
+            <input type="text" class="form-control" placeholder="Input basico">
+            </div>
+
+            <textarea name="" id="" class="form-control" placeholder="textarea"></textarea>
+
+            <!--Para poner uno al lado del otro quitamos los divs-->
+
+            <div class="form-group"><!--para sepparar checkboxs de radiobottoms-->
+
+             <!--<div class="checkbox">--> <!--se separan en div separados para poner uno abajo del otro-->
+                <label class="checkbox-inline"><!--se encierran en labels para obtener el espacio entre lo de arriba y abajo-->
+                    <input type="checkbox" name="" id="">Checkbox #1
+                </label>
+             <!--</div>
+             <div class="checkbox">-->
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="" id="">Checkbox #2
+                </label>
+             <!--</div>
+             <div class="checkbox">-->
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="" id="" >Checkbox #3<!--disabled para desabilitar el checkbox, igual para el radiobottom-->
+                </label>
+             <!--</div>-->
+
+            </div>
+
+            <div class="form-group">
+
+             <!--<div class="radio">--> <!--pasa lo mismo que en los checkboxs-->
+                <label for="radio1" class="radio-inline">
+                    <input type="radio" name="opcion" id="radio1">Radio Button #1
+                </label>
+             <!--</div>
+             <div class="radio">-->
+                <label for="radio2" class="radio-inline">
+                    <input type="radio" name="opcion" id="radio2">Radio Button #2
+                </label>
+             <!--</div>
+             <div class="radio">-->
+                <label for="radio3" class="radio-inline">
+                    <input type="radio" name="opcion" id="radio3" disabled>Radio Button #3<!--disabled, igual que en checkbox-->
+                </label>
+             <!--</div>-->
+
+            </div>
+
+            <div class="form-group"><!--para que lo ponga de bajo de los radio-->
+                <button>Enviar</button>
+            </div>
+        </form>
+    </div>
+    
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
