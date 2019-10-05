@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Dropdowns Buttons</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+
+</head>
+<body>
+   
+    <div class="container-fluid">
+        <br>
+        <div class="row"><!--fila-->
+            <div class="col-md-12"><!--columna-->
+                <div class="btn-group">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <!--data-toggle es de bootstrap-->
+                        Accion <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Items #1</a></li>
+                        <li><a href="#">Items #2</a></li>
+                        <li><a href="#">Items #3</a></li>
+                        <li><a href="#">Items #4</a></li>
+                        <li><a href="#">Items #5</a></li>
+                    </ul>
+                </div>
+
+                <!--Dividir un dropdown en dos botones (splid button)-->
+                <div class="btn-group">
+                    <!--primer btn-->
+                    <button class="btn btn-default">Texto </button>   
+                    
+                    <!--segundo btn-->
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <!--borramos el texto y quedara la flechita sola como otro boton. El texto aparece en el boton anterior.-->
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Items #1</a></li>
+                        <li><a href="#">Items #2</a></li>
+                        <li><a href="#">Items #3</a></li>
+                        <li><a href="#">Items #4</a></li>
+                        <li><a href="#">Items #5</a></li>
+                    </ul>
+
+                    <!--genera flexibilidad en la aplicacion-->
+                </div>
+            </div>
+            
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-12"><!--columna-->
+                <div class="btn-group">
+                    <!--tama;o como ya lo vimos antes btn-lg, md, sm, xs-->
+                    <button class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown">
+                        <!--data-toggle es de bootstrap-->
+                        Accion <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Items #1</a></li>
+                        <li><a href="#">Items #2</a></li>
+                        <li><a href="#">Items #3</a></li>
+                        <li><a href="#">Items #4</a></li>
+                        <li><a href="#">Items #5</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <!--data-toggle es de bootstrap-->
+                        Accion <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Items #1</a></li>
+                        <li><a href="#">Items #2</a></li>
+                        <li><a href="#">Items #3</a></li>
+                        <li><a href="#">Items #4</a></li>
+                        <li><a href="#">Items #5</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                        <!--data-toggle es de bootstrap-->
+                        Accion <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Items #1</a></li>
+                        <li><a href="#">Items #2</a></li>
+                        <li><a href="#">Items #3</a></li>
+                        <li><a href="#">Items #4</a></li>
+                        <li><a href="#">Items #5</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn-group dropup"><!--dropup pone la flecha hacia arriba y el contendido lo aparece para arriba.
+                No poner estos en la parte inicial de nuestra pag ya que se pierden los items/opciones-->
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Accion <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Items #1</a></li>
+                        <li><a href="#">Items #2</a></li>
+                        <li><a href="#">Items #3</a></li>
+                        <li><a href="#">Items #4</a></li>
+                        <li><a href="#">Items #5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
