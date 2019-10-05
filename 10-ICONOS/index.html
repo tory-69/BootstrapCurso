@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Iconos</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+
+</head>
+<body>
+   
+    <div class="container">
+
+        <!--Para los iconos, agregar un span o un div sin texto (al elemento que queremos agregar el icono) y a;adir la clase con el nombre del icono, para que funcione____Lo mas recomendable es usar span ya que la mayoria de sitios lo utilizan para elementos visuales-->
+        <h1><span class="glyphicon glyphicon-asterisk"></span> Titulo de prueba H1</h1><!--para que no aparezca el icono pegado al txto, agregar un espacio al texto " ", o hacer estilos en css-->
+        <h2><span class="glyphicon glyphicon-plus"></span>Titulo de prueba H2</h2>
+        <h3><span class="glyphicon glyphicon-euro"></span>Titulo de prueba H3</h3>
+        <h4><span class="glyphicon glyphicon-pencil"></span>Titulo de prueba H4</h4>
+        <h5><span class="glyphicon glyphicon-heart"></span>Titulo de prueba H5</h5>
+        <h6><span class="glyphicon glyphicon-star-empty"></span>Titulo de prueba H6</h6>
+
+        <!--el tama;o del icono depende del elemento en que se agrege y del tama;o de fuente del mismo elemento..... Se puede editar el tama;o del icono agregando estilos propios y cambiando el tama;o de fuente del icono (font-size)-->
+
+        <!--Al agregar texto dentro del span toma las propiedades del icono y no las del elemento en que lo estamos agregando, por ej del H1
+        Al agregar la clase directamente al elemento (sin span o div) el texto toma un espaciado muy grande entre cada palabra-->
+
+        <br>
+
+        <p><span class="glyphicon glyphicon-ok"></span>  Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus, voluptate aliquam minus necessitatibus accusantium quas rerum ipsam sunt animi? Suscipit itaque minus exercitationem facilis odit nihil. Asperiores, fugit tenetur?Ducimus id quae magni unde veniam. Fugiat, corporis odio. Eos dolor amet praesentium fugiat est</p>
+        
+        <!--para btns-->
+        <button class="btn btn-primary"><span class="glyphicon glyphicon-remove"></span></button>
+        
+        <button class="btn btn-success"><span class="glyphicon glyphicon-remove">Quitar</span></button>
+
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
