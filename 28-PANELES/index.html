@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Breadcrumb</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+   
+    <!--para encerrar contenido, da el aspecto de estar dentro de una caja-->
+    <div class="container-fluid">
+        <br>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="panel panel-default"><!--si se agrega el contenido despues de esto se ve muy peque;o-->
+                    <div class="panel-body"><!--hace que se vea un poquito mas grnde, por eso se agrega el panel default al anterior-->Lorem ipsum dolor sit amet.</div>
+                </div><!--este panel default podemos agregar colores o encabezados o pies de pag-->
+
+                <!--con encabezdo-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Encabezado/Heading
+                    </div><!--en las alertas no podemos hacer esto-->
+                    <div class="panel-body">Lorem ipsum dolor sit amet.</div>
+                </div>
+
+                <!--para el footer-->
+                <div class="panel panel-default">
+                    <!--intercambiar el orden del body y el heading y ponerle footer-->
+                    <div class="panel-body">Lorem ipsum dolor sit amet.</div>
+                    <div class="panel-footer">
+                        Pie de pag/Footer
+                    </div>
+                </div>
+
+                <br>
+                <!--con colores-->
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Encabezado/Heading
+                    </div>
+                    <div class="panel-body">Lorem ipsum dolor sit amet.</div>
+                </div>
+
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        Encabezado/Heading
+                    </div>
+                    <div class="panel-body">Lorem ipsum dolor sit amet.</div>
+                </div>
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        Encabezado/Heading
+                    </div>
+                    <div class="panel-body">Lorem ipsum dolor sit amet.</div>
+                </div>
+
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        Encabezado/Heading
+                    </div>
+                    <div class="panel-body">Lorem ipsum dolor sit amet.</div>
+                </div>
+
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        Encabezado/Heading
+                    </div>
+                    <div class="panel-body">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <!--para darle inform importante al usuario que podria leer, tmb imp y relev para el contenido....alertas son para comport de las apl, no tanto para cont-->
+
+            </div>
+
+        </div>
+       
+    </div>
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
