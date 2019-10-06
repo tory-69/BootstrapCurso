@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Mensajes de alerta</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+   <!--perimite comunicarle al usuario de ciertos comportamientos, por ejemplo un error en nuestro sitio-->
+    <div class="container-fluid">
+        <br>
+        <div class="row">
+            <div class="col-md-4"><!--lo que van a abarcar de la pag totl-->
+                <div class="alert alert-success"><!--alert nos da un espaciado...alert-success, para los cvolors-->Esta es nuestra alerta</div>
+                <div class="alert alert-info">Esta es nuestra alerta</div>
+
+                <div class="alert alert-success">
+                    <button class="close" data-dismiss="alert"><span>&times;</span></button>
+                    <strong>Alerta!</strong> Esta es nuestra alerta
+                </div>
+
+
+                <div class="alert alert-warning">Esta es nuestra alerta</div>
+                <div class="alert alert-danger">Esta es nuestra alerta</div>
+                <!--se pueden agregar mas colores con css.
+                SUCCESS-EXITO
+                INFO-DAR INFORMACION AL USUARIO
+                WARNING-ADVERTIRLE
+                DANGER-ERROR-->
+            </div>
+        </div>
+
+        <!--para que el usuario pueda quitar la alerta-->
+        <div class="row">
+            <div class="col-md-4">
+                    <div class="alert alert-success">
+                        <!--debe ir primero el btn-->
+                        <button class="close" data-dismiss="alert"><span>&times;</span></button><!--ya tenemos el caracter, la equis-->
+                       <strong>Alerta!</strong><!--para dar enfasis (negritas)-->  Esta es nuestra alerta</div>
+
+                       <!--lo que hace es tumbar el elemento del doom, el doom es c/prte que tenemos en el body..... asi al ponerla entre las otras que no tienen el caracter para cerrarla, al eliminarla los demas elementos se recorren-->
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
