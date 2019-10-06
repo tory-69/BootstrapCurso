@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Media Object</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+   
+    <!--permite poner cntnido a la der o izq, parecido al pull right o left, pero lo correcto para contenido e imagenes es con el media-->
+    <div class="container-fluid">
+        <br>
+        <div class="col-md-5">
+            <div class="media"><!--contenedor de lo que queremos ponersh-->
+                <!--vams a poner una parte a la der y otra a la izq
+                ^para el de la izq-->
+                <div class="media-left">
+                    <a href="#"><img src="imagenes/imagen.jpg" alt=""></a>
+                </div>
+
+                <div class="media-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+
+                    <!--si tenemos varios prrfs
+                    media-middle: centra verticalmente
+                    media-bottom: centra hasta abajo de todod el cont-->
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+                    
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="media-left media-middle">
+                    <a href="#"><img src="imagenes/imagen.jpg" alt=""></a>
+                </div>
+
+                <div class="media-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+                    
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="media-left media-bottom">
+                    <a href="#"><img src="imagenes/imagen.jpg" alt=""></a>
+                </div>
+    
+                <div class="media-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+                        
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+                        
+                </div>
+            </div>
+
+            <!--<br>
+                para la derecha, no es tan comun pero se puede
+            <div class="media">
+                <div class="media-right">
+                    <a href="#"><img src="imagenes/imagen.jpg" alt=""></a>
+                </div>
+                <div class="media-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+                </div>
+            </div>-->
+                
+            <!--podemos unir medias dentro de otras medias (SIRVE PARA COMENTARIOS)-->
+            <div class="media">
+                <div class="media-left">
+                    <a href="#"><img src="imagenes/imagen.jpg" alt=""></a>
+                </div>
+
+                <div class="media-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+
+
+                    <div class="media"> <!--2domediaINICIO-->
+                        <div class="media-left">
+                            <a href="#"><img src="imagenes/imagen.jpg" alt=""></a>
+                        </div>
+
+                        <div class="media-body">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+
+                            <div class="media"> <!--3ermediaINICIO-->
+                                <div class="media-left">
+                                    <a href="#"><img src="imagenes/imagen.jpg" alt=""></a>
+                                </div>
+        
+                                <div class="media-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eos dolorum deleniti consectetur aliquam architecto deserunt cupiditate impedit dolor fugiat doloremque, quod et consequatur veritatis esse nesciunt pariatur quisquam sit.</p>
+        
+                                </div>
+                            </div><!--3ermediaFIN-->
+                    
+                        </div>
+                    </div><!--2domediaFIN-->
+                    
+                    <!--ESTO SE PUEDE HACER CUANTAS VECES QUERRAMOS, SOLO VAMOS AL MEDIA BODY Y AL FINAL PEGAMOS OTRO MEDIA-->
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--NO SE USA PARA MAQUETAR, lo correcto ahi es usas columnas y demas-->
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
