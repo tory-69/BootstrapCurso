@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Navsbar</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!--Si se usa fixed-top es necesario agregar un padding en css
+    <style>
+        body{
+            padding-top: 80px anncho del menu
+        }
+    </style>-->
+
+</head>
+<body>
+   
+    <!--este es mas utilizado que el anterior-->
+    <div class=""><!--nos limita a un tama;o-->
+        <!--aqui estaba container-->
+        <br>
+        <header>
+            <!--para el menu de navegacion-->
+            <nav class="navbar navbar-default navbar-static-top navbar-inverse"><!--navbar-fixed-top__ para quela barra abarque el 100% y se quede pegada/visible aunque bajes por toda la pagina.... se puede poner abajo con navbar-fixed-bottom
+            navbar-static-top se tiene que quitar container
+            inverse cambia los colores-->
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1"><!--nombre que nosotros elegimos, tiene un # porque va a apuntar hacia un id-->
+                        
+                            <span class="sr-only">Menu</span><!--que se muestre un boton que diga menu en dichos disp-->
+                            <span class="icon-bar"></span><!--es un icono, una barrita-->
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <!--los 3 juntos hacen el icono del menu-->
+
+                        </button>
+
+                        <a href="#" class="navbar-brand">ITLinares</a>
+
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbar-1"><!--id igual al del data target-->
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Item #1</a></li>
+                            <li class="active"><a href="#">Item #2</a></li><!--en la paginacion si se quita el elemento a, aqui no-->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                    Dropdown <span class="caret"></span><!--el iconito-->
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Item #1</a></li>
+                                    <li><a href="#">Item #2</a></li>
+                                    <li class="divider"></li><!--division-->
+                                    <li><a href="#">Item #4</a></li>
+                                </ul>
+
+                            </li>
+                        </ul>
+
+                        <form action="" class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Buscar">
+                            </div>
+                        </form><!--para poner formularios dentro del menu de navegacion-->
+
+
+                        <ul class="nav navbar-nav navbar-right"><!--que tds los elmts se desplacen a la dcha-->
+                            <li><a href="#">Item #1</a></li>
+                            <li class="active"><a href="#">Item #2</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                    Dropdown <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Item #1</a></li>
+                                    <li><a href="#">Item #2</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Item #4</a></li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
