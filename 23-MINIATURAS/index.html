@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Thumbnails</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+  
+     <br>
+    <div class="container">
+        <div class="row"><!--filaa-->
+            <div class="col xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="imagenes/imagen1.jpg" alt=""></a><!--para que el usuario pueda dar un click, thumbnail agrega unos bordes a los lados, borders redondeados, y al pasar el mouse da un efecto si es un enlace(a)-->
+            </div>
+            <div class="col xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="imagenes/imagen2.jpg" alt=""></a>
+            </div>
+            <div class="col xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="imagenes/imagen3.jpg" alt=""></a>
+            </div>
+            <div class="col xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="imagenes/imagen4.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <!--para agregar imagenes por abajo debemos agregar otra fila-->
+        <div class="row">
+            <div class="col xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="imagenes/imagen1.jpg" alt=""></a>
+            </div>
+            <div class="col xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="imagenes/imagen2.jpg" alt=""></a>
+            </div>
+            <div class="col xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="imagenes/imagen3.jpg" alt=""></a>
+            </div>
+
+            <!--para agregar texto a la imagen, dentro de la columna debe ir la thumbnail, nuestra imagen dentro de thumbnail, posteriormente un caption y dentro el contenido-->
+            <div class="col xs-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="imagenes/imagen4.jpg" alt="">
+                    <div class="caption"><!--todo el contenido que queremos aparezca-->
+                        <h3>Titulo de la foto</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem delectus fuga nisi totam sequi nam suscipit fugit enim, quaerat cum voluptate odit qui consequatur eligendi hic aperiam autem harum magni.</p>
+                        <a href="#" class="btn btn-primary">Leer mas</a>
+                        <a href="#" class="btn btn-success">Leer mas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--al agregar otra fila de imagenes se ponen por debajo del texto (caption)-->
+        <div class="row">
+            <div class="col xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="imagenes/imagen1.jpg" alt=""></a>
+            </div>
+            <div class="col xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="imagenes/imagen2.jpg" alt=""></a>
+            </div>
+            <div class="col xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="imagenes/imagen3.jpg" alt=""></a>
+            </div>
+            <div class="col xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="imagenes/imagen4.jpg" alt=""></a>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--hacer galerias, dar estructura
+    agregar el caption a cada imagen, porque seria ilogico que solo una tenga-->
+    
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
