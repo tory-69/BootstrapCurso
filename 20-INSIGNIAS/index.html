@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Badges</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+
+   <!--numeros que podemos agregar a nuestros botones, enlaces y demas, para indicar algo... ej fb dice cuantos msj tienes sin leer-->
+    <div class="container-fluid">
+        <br>
+        <!--<a href="#">Mensajes privados = 15</a>esto no se ve muy bien-->
+
+        <!--con bootstrap-->
+        <a href="#">Mensajes privados <span class="badge">15</span></a>
+
+        <br><br><!--para poner uno abajo del otro (son elmts en linea, con los saltos ya los separamos vert)-->
+
+        <!--para botones-->
+        <button class="btn btn-primary">Mensajes privados <span class="badge">50</span></button>
+
+        <br><br>
+
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#">Inicio <span class="badge">54</span></a></li>
+            <li><a href="#">Perfil </a></li><!--no mostrara msjs porque no agregamos el span-->
+            <li><a href="#">Mensajes <span class="badge">24</span></a></li>
+        </ul>
+    </div>
+
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
