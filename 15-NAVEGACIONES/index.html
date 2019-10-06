@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Navs</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+   
+    <div class="container-fluid">
+        <br>
+        <!--menu por pesta;as-->
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active" ><a href="#">Item #1</a></li><!--active, selecciona la primer pesta;a, muestra el que esta activo-->
+                    <li role="presentation"><a href="#">Item #2</a></li>
+                    <li role="presentation"><a href="#">Item #3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--menu pastillas
+        cambia el estilo-->
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="active" ><a href="#">Item #1</a></li>
+                    <li role="presentation"><a href="#">Item #2</a></li>
+                    <li role="presentation"><a href="#">Item #3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="nav nav-pills nav-stacked"><!--abarca el 100% de tu contenedor, por eso usamos columnas, para que no abarque tda la pag-->
+                    <li role="presentation" class="active" ><a href="#">Item #1</a></li>
+                    <li role="presentation"><a href="#">Item #2</a></li>
+                    <li role="presentation"><a href="#">Item #3</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--.............menu justificados.........-->
+        <!--menu por pesta;as-->
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="nav nav-tabs nav-justified"><!--nav-justified reparte el valor total (especificado en las columnas) entre ellos... cuando trabajamos por columnas-->
+                    <li role="presentation" class="active" ><a href="#">Item #1</a></li>
+                    <li role="presentation"><a href="#">Item #2</a></li>
+                    <li role="presentation"><a href="#">Item #3</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!--menu pastillas-->
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="nav nav-pills nav-justified">
+                    <li role="presentation" class="active" ><a href="#">Item #1</a></li>
+                    <li role="presentation" class="disabled"><!--lo desabilita--><a href="#">Item #2</a></li>
+                    <li role="presentation"><a href="#">Item #3</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <br>
+        <!--menu por pesta;as-->
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active" ><a href="#">Item #1</a></li>
+                    <li role="presentation"><a href="#">Item #2</a></li>
+                    <li role="presentation"><a href="#">Item #3</a></li>
+
+                    <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Dropdown <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li role="presentation" class="active"><a href="#">Item #1</a></li>
+                            <li role="presentation" class="active"><a href="#">Item #2</a></li>
+                            <li role="presentation" class="active"><a href="#">Item #3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--menu pastillas-->
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="active" ><a href="#">Item #1</a></li>
+                    <li role="presentation"><a href="#">Item #2</a></li>
+                    <li role="presentation"><a href="#">Item #3</a></li>
+
+                    <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Dropdown <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li role="presentation" class="active"><a href="#">Item #1</a></li>
+                            <li role="presentation" class="active"><a href="#">Item #2</a></li>
+                            <li role="presentation" class="active"><a href="#">Item #3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
