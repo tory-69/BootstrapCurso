@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Groups</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    
+    <div class="container-fluid"></div>
+        <br>
+        <div class="row"><!--fila-->
+            <div class="col-md-3"><!--columna-->
+                
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><!--input-group-addon agregar un span de texto hacia la izq-->Correo:</span>
+                        <!--en disp que no permiten placeholder, sirve este span, para guiar al usuario que poner-->
+                        <input type="text" class="form-control">
+                        <!--para ponerlo al lado derecho solo se pone primero el input y luego el span-->
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon">.00</span>
+                        <!--al poner 2 span y el input en medio, pone los cuadritos de texto a los lados-->
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="checkbox">
+                        </span>
+                        <input type="text" class="form-control"><!--para activar o desactivar la caja-->
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon">
+                            <input type="radio" name="radio1">
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <input type="radio" name="radio1">
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <!--para poder seleccionar uno u otro y depende a la decision sera el resultd-->
+
+                <!--btns-->
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-btn"><!--btn no addon, si no hara el boton mas grnde... en los demas si es addon-->
+                            <button class="btn btn-primary">Boton</button>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <!--dropup button-->
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                Boton <span class="caret"></span><!--para el icono-->
+                            </button>
+                            <!--para los elemts-->
+                            <ul class="dropdown-menu"><!--sin la clase no me agrega los elemts-->
+                                <li><a href="#">Item #1</a></li>
+                                <li><a href="#">Item #2</a></li>
+                                <li><a href="#">Item #3</a></li>
+                                <li><a href="#">Item #4</a></li>
+                            </ul>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <!--split button-->
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary">Boton</button><!--solo las clases normales-->
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span><!--dejamos solo la flechita que es el icono-->
+                            </button>
+                                
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Item #1</a></li>
+                                <li><a href="#">Item #2</a></li>
+                                <li><a href="#">Item #3</a></li>
+                                <li><a href="#">Item #4</a></li>
+                            </ul>
+                        </span>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
