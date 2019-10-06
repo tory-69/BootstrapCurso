@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Progress Bar</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+   
+    <!--si se necesita mostrar barra de prog donde se cargue algun arch-->
+    <div class="container-fluid">
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="progress"><!--es la barra vacia-->
+                    <div class="progress-bar" role="progressbar" style="width: 10%;"><!--con esta vamos a rellenar la barra de progr-->
+                    10% Completado <!--texto que aparecera dentro de lo que ya se ha completado(el relleno de color)-->
+                    </div>
+                    <span class="sr-only">10% Completado</span>
+                    <!--si ponemos el txto aqui, aparecera en lo que aun no se ha rellenado (no muy recomendado)-->
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%; min-width: 10%;">
+                    0% <!--aunque tenga 0% se rellena el 10%-->
+                    </div>
+                    <span class="sr-only">10%</span>
+                    <!--al estar cargada por ej 10% la barra, solo muetsra el txto que cabe dentro (en el txto dentro del porgress-bar), para solucionarlo es recomend que solo agregemos los numeros o agregemos el min-width, le decimos que el ancho minimo que mostrara es de 10%, para que muestre los num-->
+                </div>
+
+                <br>
+                <!--..........Colores..........-->
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width: 100%; min-width: 10%;"><!--progress-bar-striped agrega barritas inclinadas ; active aqui da un efecto de movimiento-->100% 
+                    </div>
+                    <span class="sr-only">100%</span>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" role="progressbar" style="width: 100%; min-width: 10%;">100% 
+                    </div>
+                    <span class="sr-only">100%</span>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 100%; min-width: 10%;">100% 
+                    </div>
+                    <span class="sr-only">100%</span>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 100%; min-width: 10%;">100% 
+                    </div>
+                    <span class="sr-only">100%</span>
+                </div>
+
+                <br>
+                <!--......Convinadas.....-->
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success" role="progressbar" style="width: 20%;">
+                        <span class="sr-only">20% Completado</span><!--porque algunos sr no tienen colores-->
+                    </div>
+
+                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" style="width: 20%;">
+                        <span class="sr-only">20% Completado</span>
+                    </div>
+                    <!--estas son para cuando tienes varios pasos y quieres llenarla paso a paso-->
+
+                    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" style="width: 20%;">
+                        <span class="sr-only">20% Completado</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--todo es cuestion de jugar con las opc y ponerlas a gusto propio-->
+
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
