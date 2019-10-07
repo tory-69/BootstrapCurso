@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Modals - Ventanas Emergentes</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+   
+    <!--Componentes de js que permiten dar interraccion entre el usuario, componenetes y elementos-->
+    <div class="container-fluid">
+        <br>
+
+        <!--el btn que nos llevra a la vnta-->
+        <a href="#ventana1" class="btn btn-primary btn-lg" data-toggle="modal">Boton #1</a>
+        <!--para varios botones agregamos otro boton de enlace-->
+        <a href="#ventana2" class="btn btn-success btn-lg" data-toggle="modal">Boton #2</a><!--si no agregamos otro modal-fade aparecera lo mismo que en el primero-->
+    
+        <!--crear nuestra PRIMER ventana dentro de un div
+        ..modal fade convertira la vtna un pco obsc al press el btn y al centro aparecera la vtna-->
+        <div class="modal fade" id="ventana1"><!--abarca todo el ancho y larg de la pantalla-->
+
+            <div class="modal-dialog"><!--es la vtna-->
+                <!--tenemos que agregar aun mas clases-->
+
+                <div class="modal-content"><!--dentro el cntenido, pero aun faltan clases-->
+                    
+                    <!--HEADER DE LA VENTANA-->
+                    <div class="modal-header"><!--lo que ocupemos de contenido-->
+
+                        <!--boton para cerrar-->
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;<!--la equis--></button>
+
+                        <h4 class="modal-title"> Encabezado de nuestra ventana #2</h4>
+                    </div><!--fin encabezado/HEADER-->
+
+                    <!--CONTENIDO de la vnta-->
+                    <div class="modal-body"><!--aqui va el contendio, texto, imagenes, botones, etc-->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis necessitatibus provident omnis et soluta, illo odit commodi delectus unde sunt, nihil rem tenetur nemo voluptatum ratione voluptatem minus fugit!</p>
+                    </div>
+
+                    <!--FOOTER de la ventana-->
+                    <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button><!--data-dismiss es la funcionalidad de cerrar-->
+
+                        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                    </div><!--fin FOOTER-->
+
+                </div><!--fin contenido-->
+
+            </div><!--fin ventana-->
+
+        </div><!--fin modal-fade-->
+
+        <!--crear nuestra SEGUNDA ventana-->
+        <div class="modal fade" id="ventana2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!--HEADER DE LA VENTANA-->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                        <h4 class="modal-title"> Encabezado de nuestra ventana #2</h4>
+                    </div><!--fin encabezado/HEADER-->
+
+                    <!--CONTENIDO de la vnta-->
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis necessitatibus provident omnis et soluta, illo odit commodi delectus unde sunt, nihil rem tenetur nemo voluptatum ratione voluptatem minus fugit!</p>
+                    </div>
+
+                    <!--FOOTER de la ventana-->
+                    <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+
+                        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                    </div><!--fin FOOTER-->
+                </div><!--fin contenido-->
+            </div><!--fin ventana-->
+        </div><!--fin modal-fade-->
+
+    </div>
+
+    <!--para mostrar inf, que su op ha sido correcta, etc-->
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
