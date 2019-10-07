@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Collapse Component</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+   
+    <!--poder mostrar y ocultar cont con un boton, tambien acordeones-->
+    <div class="container">
+        <br>
+
+        <a href="#seccion" class="btn btn-primary" data-toggle="collapse">Mostrar / Ocultar</a>
+
+        <div class="collapse" id="seccion"><!--lo tenemos oculto con collapse....recordadr que el id se pone en href con un # primero-->
+            <br>
+            <div class="well"><!--permite agregar cont a una caja, pero esa caja parece estar sumida en pantalla-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, eos? Quas blanditiis praesentium eius voluptatibus qui rem, architecto impedit eveniet eaque distinctio recusandae repellat perferendis nam consectetur ut dolor debitis.</p>
+            </div>
+        </div>
+
+        <br><br>
+        <!--acordeon-->
+        <div class="panel-group" id="accordion" role="tablist">
+            <!--PANEL-DEFAULT 1-->
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading1">
+                    <h4 class="panel-title">
+                        <a href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                        Encabezado #1
+                        </a>
+                    </h4>
+                </div>
+
+                <div id="collapse1" class="panel-collapse collapse in"><!--Al presionar en nuestro elemento a (de arriba) se enviara a este panel...poner el mismo nombre
+                panel-collapse pone una peque;a linea abajo de Encabezado al poner el cursor-->
+                    <div class="panel-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora inventore pariatur perferendis velit numquam libero aperiam vel quis dicta temporibus veniam eum, hic veritatis magni dignissimos cumque quod ducimus?
+                    </div>
+                </div>
+            </div><!--FIN PANEL-DEFAULT1-->
+
+            <!--PANEL-DEFAULT 2-->
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading2">
+                    <h4 class="panel-title">
+                        <a href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                            Encabezado #2
+                        </a>
+                    </h4>
+                </div>
+    
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora inventore pariatur perferendis velit numquam libero aperiam vel quis dicta temporibus veniam eum, hic veritatis magni dignissimos cumque quod ducimus?
+                    </div>
+                </div>
+            </div><!--FIN PANEL-DEFAULT 2-->
+
+            <!--PANEL-DEFAULT 3-->
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading3">
+                    <h4 class="panel-title">
+                        <a href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+                            Encabezado #3
+                        </a>
+                    </h4>
+                </div>
+        
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora inventore pariatur perferendis velit numquam libero aperiam vel quis dicta temporibus veniam eum, hic veritatis magni dignissimos cumque quod ducimus?
+                    </div>
+                </div>
+            </div><!--FIN PANEL-DEFAULT 3-->
+                    
+        </div>
+    </div>
+
+    <!--NOTA: recordar que el id (sin #) es el padre, y el que tiene # es el hijo
+    NOTA2: La clase "in" se las quitamos a los que no queremos que aparezcan abiertas. Asi solo una parecera abierta y al selecciobnar otro, se abrira y se cerrara el que estaba abierto con anterioridad-->
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
