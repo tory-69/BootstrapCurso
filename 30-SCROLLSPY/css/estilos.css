@@ -1,0 +1,9 @@
+/*es por defecto, asi lo plantea bootstrap*/
+body{
+    position: relative;
+}
+
+/*al contenido le agregamos la clase seccion para agregarle padding en la parte superior para que el txto aparezca bajo el menu*/
+.seccion{
+    padding-top: 60px;
+}
