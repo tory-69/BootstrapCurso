@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale-1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Blog de VictoriaGonzalez</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css"><!--importante poner despues del .min.css-->
+
+
+</head>
+<body>
+   
+    <header>
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation"><!--es el que agrega el margen de abajo para la barra de navegacion-->
+            <div class="container">
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-vg">
+                        <span class="sr-only">Desplegar/Ocultar Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a href="#" class="navbar-brand">Victoria Gonzalez</a>
+                </div>
+
+                <!--INICIA MENU-->
+                <div class="collapse navbar-collapse" id="navegacion-vg">
+                    <ul class="nav navbar-nav"><!--agr categ-->
+
+                        <!--categ menu-->
+                        <li class="active"><a href="#">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                Categorias <span class="caret"></span>
+                            </a>
+
+                            <!--subcategorias-->
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Categoria #1</a></li>
+                                <li class="divider"></li><!--la linea separadora-->
+                                <li><a href="#">Categoria #2</a></li>
+                                <li><a href="#">Categoria #3</a></li>
+                                <li><a href="#">Categoria #4</a></li>
+                            </ul><!--fin subcateg-->
+                        </li>
+
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacto</a></li><!--fin categorias-->
+                    </ul><!--fin agr categ-->
+
+                    <!--formulario navegacion-->
+                    <form action="" class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="buscar">
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </form><!--fin form nav-->
+
+                </div><!--FIN MENU-->
+            </div><!--FIN CONTAINER-->
+        </nav>
+    </header>
+
+    <!--Aqui va el JUMBOTRON-->
+    <section class="jumbotron">
+        <div class="container">
+            <h1 class="titulo-blog">Victoria Gonzalez Blog</h1>
+            <p>Blog de diseño web</p>
+        </div>
+    </section>
+
+    <section class="main container">
+        <div class="row">
+            <section class="posts col-md-9"><!--9 porque las emas seran para sidebard-->
+                <div class="miga-de-pan">
+                    <ol class="breadcrumb"><!--para saber donde estamos-->
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Categorias</a></li>
+                        <li class="active">Diseño We class="active"b</li><!--en la que estamos-->
+                    </ol>
+                </div>
+
+                <!--PRIMER ARTICULO-->
+                <article class="post clearfix"><!--nos puede dar problemas si no ponemos clearfix-->
+                    <a href="#" class="thumb pull-left"><!--para que se vaya a la izq, sin el se queda en medio-->
+                        <img class="img-thumbnail" src="imagenes/imagen1.jpg" alt=""><!--en este thumb, el contenedor ya mide 40% pero la imagen mide lo que se le da la gana, tenemos que decirle cuanto mida desde css-->
+                    </a>
+                    <h2 class="post-title">
+                        <a href="#">
+                        Este es el titulo del articulo
+                        </a>
+                    </h2>
+                    <p><span class="post-fecha">6 de octubre de 2019</span> por <span class="post-autor"><a href="#">Aqui va el autor del articulo</a></span></p>
+                    <p class="post-contenido text-justify">
+                        Aqui va todo nuestro contenido.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde accusamus eos, voluptas porro consectetur placeat. Beatae officiis ea dolore a, distinctio, hic reiciendis, maiores architecto cupiditate laborum neque esse porro?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt magni, explicabo maiores quo officiis a inventore? Laudantium corrupti quis ratione sunt nobis ab, rem, totam in tempora voluptatem quaerat eius.
+                    </p>
+
+                    <div class="contenedor-botones">
+                        <a href="#" class="btn btn-primary">Leer mas</a>
+                        <a href="#" class="btn btn-success">Comentarios <span class="badge">20</span></a>
+                    </div>
+                </article>
+
+                <!--SEGUNDO ARTICULO-->
+                <article class="post clearfix">
+                    <a href="#" class="thumb pull-left">
+                        <img class="img-thumbnail" src="imagenes/imagen2.jpg" alt="">
+                    </a>
+                    <h2 class="post-title">
+                        <a href="#">
+                        Este es el titulo del segundo articulo
+                        </a>
+                    </h2>
+                    <p><span class="post-fecha">24 de septiembre de 2018</span> por <span class="post-autor"><a href="#">Aqui va el autor del articulo</a></span></p>
+                    <p class="post-contenido text-justify">
+                        Aqui va todo nuestro contenido.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde accusamus eos, voluptas porro consectetur placeat. Beatae officiis ea dolore a, distinctio, hic reiciendis, maiores architecto cupiditate laborum neque esse porro?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt magni, explicabo maiores quo officiis a inventore? Laudantium corrupti quis ratione sunt nobis ab, rem, totam in tempora voluptatem quaerat eius.
+                    </p>
+
+                    <div class="contenedor-botones">
+                        <a href="#" class="btn btn-primary">Leer mas</a>
+                        <a href="#" class="btn btn-success">Comentarios <span class="badge">15</span></a>
+                    </div>
+                </article>
+
+                <!--TERCER ARTICULO-->
+                <article class="post clearfix">
+                    <a href="#" class="thumb pull-left">
+                        <img class="img-thumbnail" src="imagenes/imagen3.jpg" alt="">
+                    </a>
+                    <h2 class="post-title">
+                        <a href="#">
+                        Este es el titulo del tercer articulo
+                        </a>
+                    </h2>
+                    <p><span class="post-fecha">2 de mayo de 2017</span> por <span class="post-autor"><a href="#">Aqui va el autor del articulo</a></span></p>
+                    <p class="post-contenido text-justify">
+                        Aqui va todo nuestro contenido.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde accusamus eos, voluptas porro consectetur placeat. Beatae officiis ea dolore a, distinctio, hic reiciendis, maiores architecto cupiditate laborum neque esse porro?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt magni, explicabo maiores quo officiis a inventore? Laudantium corrupti quis ratione sunt nobis ab, rem, totam in tempora voluptatem quaerat eius.
+                    </p>
+
+                    <div class="contenedor-botones">
+                        <a href="#" class="btn btn-primary">Leer mas</a>
+                        <a href="#" class="btn btn-success">Comentarios <span class="badge">20</span></a>
+                    </div>
+                </article>
+
+                <!--agregar otro nav, porque las paginaciones son navegadores tmb-->
+                <nav>
+                    <!--aqui solo agregamos el botoncito para ir a la primera pagina-->
+                    <div class="center-block">
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#">&laquo;<span class="sr-only">Anterior</span></a></li><!--para disp solo lectura-->
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li><!--son para los numeros de paginas que tenemos-->
+                            <li><a href="#">&raquo;<span class="sr-only">Siguiente</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+
+            <!--ASIDE-->
+            <aside class="col-md-3 hidden-xs hidden-sm"><!--se va a desaparecer en disp peq-->
+                <h4>Categorias</h4>
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Diseño Web</a>
+                    <a href="#" class="list-group-item">CSS</a>
+                    <a href="#" class="list-group-item">Cursos</a>
+                    <a href="#" class="list-group-item">Desarrollo Web</a>
+                    <a href="#" class="list-group-item">Elementos Web</a>
+                    <a href="#" class="list-group-item">Jquery</a>
+                    <a href="#" class="list-group-item">Recursos y Herramientas</a>
+                </div>
+    
+                <h4>Articulos Recientes</h4>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Este es el titulo del articulo</h4><!--nom del articulo-->
+                    <p class="list-group-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><!--descripcion del art-->
+                </a>
+    
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Este es el titulo del segundo articulo</h4>
+                    <p class="list-group-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </a>
+    
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Este es el titulo del tercer articulo</h4>
+                    <p class="list-group-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </a>
+            </aside><!--FIN ASIDE-->
+
+        </div>
+    </section>
+    <!--FIN JUMBOTRON-->
+
+ <!--PIE DE PAGINA-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <p>Victoria Cortes Gzz</p>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="list-inline text-right">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!--NOTA: poner nombres relacionados a las imagenes
+    NOTA2: &laquo; y &raquo; son las flechitas hacia la der e izq, por si se me olvida-->
+
+    <!--scrips... estan en js-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>

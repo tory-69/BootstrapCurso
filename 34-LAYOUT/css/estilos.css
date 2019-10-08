@@ -1,0 +1,58 @@
+/*---HEADER-----*/
+.navbar {
+    margin-bottom: 0;
+}
+.jumbotron{
+    background: #428bca;
+    color: #fff;
+    padding: 20px 0;
+}
+/*.jumbotron .titulo-blog{ primero accedemos al jumbotron y luego a la clase que queremos
+    font-size: 80px;
+}*/
+
+/*jumbotron*/
+/*------POST---------*/
+/*.main esta en el segundo section de jumbotron*/
+.main{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*nos sirve para separar tds nuestros articulos*/
+.post{
+    padding-bottom: 20px;
+    margin-bottom: 20px; /*porque le agregaremos un border*/
+    border-bottom: 1px solid #999;
+}
+.post .post-title a{ /*accedemos al titulo del post y luego al elemento a y cambiamos color*/
+    color: #333;
+}
+
+/*la miniatura*/
+.post .thumb{
+    margin-right: 10px;/*margen a la derecha*/
+    width: 40%;
+}/*con esto aparece el texto en la imagen con un espacio a la izquierda (donde ira la imagen) y el contenido a la izquieda*/
+
+/*con esto la imagen ya se acopla a nuestro contenedor y se pone a la izquierda*/
+.post .thumb img{
+    width: 100%;
+}
+
+/*botones*/
+.post .contenedor-botones{
+    width: 100%;
+}
+
+/*agregar a la imagen la clase img-thumbnail para los bordes*/
+
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 768px){
+    .post .thumb{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
