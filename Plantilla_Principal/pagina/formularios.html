@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Elementos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- bootstrap 4-->
+	<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.min.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="../plugins/fontawesome-free-5.8.1-web/css/all.min.css">
+	<!-- Estilo personalizado -->
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<!-- bootstrap-toggle-master -->
+	<link href="../plugins/bootstrap-toggle-master/css/bootstrap-toggle.css" rel="stylesheet">
+	<link href="../plugins/bootstrap-toggle-master/stylesheet.css" rel="stylesheet">
+	<!-- alertify -->
+	<link href="../plugins/alertifyjs/css/alertify.css" rel="stylesheet">	
+	<link href="../plugins/alertifyjs/css/themes/default.css" rel="stylesheet">
+	<!-- DataTables -->	
+	<link rel="stylesheet" href="../plugins/datatables/dataTables.bootstrap.css">	
+	<!-- animate -->
+	<link rel="stylesheet" href="../plugins/animate/animate.css">
+	<!-- select2 -->
+	<link rel="stylesheet" href="../plugins/select2/select2.css">
+
+</head>
+<body>
+	<header>
+		<!-- encabezado -->
+		<section class="contenedor iconos fondo">
+
+			<ul class="nav-pills pull-right menu-bar">
+				<li class="list-unstyled">
+					<a href="#" class="color  borde animated bounceIn" id="menuV">
+						<i class="fas fa-bars"></i>
+					</a>
+				</li>
+				<li class="list-unstyled espIco">
+					<a href="#" class="color borde animated bounceIn" data-toggle="modal" data-target="#miModal">
+						<i class="far fa-user-circle"></i>
+					</a>
+				</li>
+
+				<h2 class="fondo  usuario">Lesly Victoria Cortés González</h2>
+
+			</ul>
+
+			<h2 class="fondo  empresa">INSTITUTO TECNOLOGICO DE LINARES</h2>
+				
+		</section>
+		<!-- encabezado -->
+	</header><!-- /header -->	
+	<div class="container-fluid tamContenido" >
+		<div class="row">
+			<div class="col-xs-0 col-sm-3 col-md-2 col-lg-2 vertical">
+			<!-- sidebar -->
+				<div class="sidebar fondo borde  sombra  animated bounceIn" id="mnuLateral">
+					<h2 class="fondo mLateral">Menú</h2>
+					<ul class="menuv">
+						<li class="list-unstyled icoMedia">
+							<a href="../index.html" class="fasLink">
+								<i class="fas fa-square fa-lg fasIco"></i> <label class="lblIco"> Secciones</label>
+							</a>
+						</li>
+						<li class="list-unstyled icoMedia">
+							<a href="pagina/formularios.html" class="activo fasLink">
+								<i class="fas fa-object-group fa-lg fasIco"></i> <label class="lblIco">	Elementos
+								</label>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+				
+			<!-- sidebar -->
+			</div>
+			<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 cont">
+			   <div class="titulo borde sombra">
+			        <h3 class="animated zoomIn tPrincipal">Elementos de formularios</h3>
+			   </div>	
+			   <div class="contenido borde sombra" style="padding-right:18px;">
+				   <div class="container-fluid">
+					<!-- Elementos -->
+					
+
+
+					<div class="formulario animated  slideInUp">
+						<form role="form" class="interno">
+
+							<div class="encabezado">
+								Elementos.
+							</div>
+
+							<div class="container" >
+								<div class="panel-group col-md-9" id="accordion" role="tablist">
+									<!--PANEL-DEFAULT 1-->
+									<div class="panel panel-default" >
+										<div class="panel-heading" role="tab" id="heading1">
+											<h4 class="panel-title">
+												<a href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+													1-Jumbotron
+												</a>
+											</h4>
+										</div>
+						
+										<div id="collapse1" class="panel-collapse collapse in">
+											<div class="panel-body">
+												El jumbotron es utilizado para brindar un aspecto diferente a la parte principal una página. Lo que hace es encerrar el texto en una caja, con aspecto un tanto diferente a los otros componentes comunes.
+												Su funcion principal es llamar la atención de los usuarios.
+											</div>
+										</div>
+									</div><!--FIN PANEL-DEFAULT1-->
+						
+									<!--PANEL-DEFAULT 2-->
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="heading2">
+											<h4 class="panel-title">
+												<a href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+													2-Acordeon.
+												</a>
+											</h4>
+										</div>
+							
+										<div id="collapse2" class="panel-collapse collapse">
+											<div class="panel-body">
+												Los acordeones nos sirven para poder mostrar y ocultar contenido mediante un botón.
+												Nos permiten guardar contenido en una caja que simula estar escondida en nuestra pantalla.
+											</div>
+										</div>
+									</div><!--FIN PANEL-DEFAULT 2-->
+						
+									<!--PANEL-DEFAULT 3-->
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="heading3">
+											<h4 class="panel-title">
+												<a href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+													3-Aside.
+												</a>
+											</h4>
+										</div>
+								
+										<div id="collapse3" class="panel-collapse collapse">
+											<div class="panel-body">
+												Es una herramienta que nos sirve como menu (agregando las opciones necesarias, claro está). Una pequeña caja que se puede posicionar a los lados de nuestra página, con las categorías u opciones de nuestro menu.
+											</div>
+										</div>
+									</div><!--FIN PANEL-DEFAULT 3-->
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="heading3">
+											<h4 class="panel-title">
+												<a href="#collapse4" data-toggle="collapse" data-parent="#accordion">
+													4-Thumbnails.
+												</a>
+											</h4>
+										</div>
+									
+										<div id="collapse4" class="panel-collapse collapse">
+											<div class="panel-body">
+												Esto nos sirve para crear galerías en nuestros sitios web.
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="heading3">
+											<h4 class="panel-title">
+												<a href="#collapse5" data-toggle="collapse" data-parent="#accordion">
+													5-Modales.
+												</a>
+											</h4>
+										</div>
+										
+										<div id="collapse5" class="panel-collapse collapse">
+											<div class="panel-body">
+												Los modales abren una ventana emergente que puedes cerrar mediante botones con un icono especial (&times;) o botones comunes. Muestran información para el usuario no muy larga y más que nada es informativa.
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="heading3">
+											<h4 class="panel-title">
+												<a href="#collapse6" data-toggle="collapse" data-parent="#accordion">
+													6-Paginación.
+												</a>
+											</h4>
+										</div>
+											
+										<div id="collapse6" class="panel-collapse collapse">
+											<div class="panel-body">
+												La paginación ayuda al usuario a saber en que página está y cuáles tiene disponibles para trasladarse. Así mismo, le facilita el volver y segir entre las páginas de nuestro sitio.
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="heading3">
+											<h4 class="panel-title">
+												<a href="#collapse7" data-toggle="collapse" data-parent="#accordion">
+													6-Header y Footer.
+												</a>
+											</h4>
+										</div>
+												
+										<div id="collapse7" class="panel-collapse collapse">
+											<div class="panel-body">
+												Header nos sirve para poner un encabezado y footer un pie de página. Ambos brindan información de contacto.
+												Header además nos ayuda si queremos poner un menu, o barras de navegación.
+											</div>
+										</div>
+									</div>
+											
+									<br><br>
+								</div>
+							</div>
+
+						</form>
+					</div>
+
+					<div class="formulario animated  slideInUp">
+						<form role="form" class="interno">
+
+							<div class="encabezado">
+								Imagenes utilizadas durante el curso.
+							</div>
+
+							<div class="row"><!--filaa-->
+								<div class="col xs-6 col-md-3">
+									<a href="#" class="thumbnail"><img src="../imagenes/imagen1.jpg" alt=""></a>
+								</div>
+								<div class="col xs-6 col-md-3">
+									<a href="#" class="thumbnail"><img src="../imagenes/imagen2.jpg" alt=""></a>
+								</div>
+								<div class="col xs-6 col-md-3">
+									<a href="#" class="thumbnail"><img src="../imagenes/imagen3.jpg" alt=""></a>
+								</div>
+								<div class="col xs-6 col-md-3">
+									<a href="#" class="thumbnail"><img src="../imagenes/imagen4.jpg" alt=""></a>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col xs-6 col-md-3">
+										<a href="#" class="thumbnail"><img src="../imagenes/imagen4.jpg" alt=""></a>
+								</div>
+								<div class="col xs-6 col-md-3">
+									<a href="#" class="thumbnail"><img src="../imagenes/imagen.jpg" alt=""></a>
+								</div>
+							</div>
+
+						</form>
+					</div>
+					<!-- Elementos -->
+					</div>
+			   </div>	
+			   <nav>
+                    <!--aqui solo agregamos el botoncito para ir a la primera pagina-->
+                    <div class="center-block">
+                        <ul class="pagination">
+                            <li ><a href="../index.html">&laquo;<span class="sr-only">Anterior</span></a></li><!--para disp solo lectura-->
+                            <li ><a href="../index.html">1</a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li class="disabled"><a href="#">&raquo;<span class="sr-only">Siguiente</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+			</div>			
+		</div>
+	</div>
+	<footer class="fondo">
+		<div class="copyright">
+				@ 2019 Perez Briseño | <a href="" class="linkf">ISC/MGTI</a>
+			</div>
+			<div class="information">
+				Politicas y privacidad | <a href="" class="linkf">ISC/MGTI</a>
+		</div>	
+	</footer>
+
+	<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h3 class="modal-title  tPrincipal">Información de usuario</h3>
+				</div>
+				<div class="modal-body animated flipInX">
+						<img src="../imagenes/yo.jpg" class="img-thumbnail mImg">
+						<h4 class="tPrincipal colorLetra centrar">
+							Ing. Sistemas Computacionales
+						</h4>
+						<h4 class="tPrincipal colorLetra centrar">
+							7to semestre
+						</h4>
+
+						<h4 class="tPrincipal colorLetra centrar">
+							Lesly Victoria Cortés González
+						</h4>
+
+						<h4 class="tPrincipal colorLetra centrar">
+							Instituto Tecnologico de Linares
+						</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- SCRIPT JAVASCRIPT -->
+
+	<!-- jquery -->
+	<script src="../plugins/jQuery/jQuery-2.1.4.min.js"></script>
+	<!-- alertify -->
+	<script src="../plugins/alertifyjs/alertify.js"></script>
+	<!-- bootstrap -->
+	<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- preloaders -->
+	<script src="../plugins/Preloaders/jquery.preloaders.js"></script>
+	<!-- bootstrap-toggle-master -->
+	<script src="../plugins/bootstrap-toggle-master/doc/script.js"></script>
+	<script src="../plugins/bootstrap-toggle-master/js/bootstrap-toggle.js"></script>
+	<!-- Scripts personalizados -->
+	<script src="../js/menu.js"></script>
+	<script src="../js/precarga.js"></script>
+	<script src="../js/salir.js"></script>
+	<!-- DataTables -->
+	<script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="../plugins/datatables/dataTables.bootstrap.min.js"></script>
+	<!-- dataTableButtons -->
+	<script type="text/javascript" src="../plugins/dataTableButtons/dataTables.buttons.min.js"></script>
+	<script type="text/javascript" src="../plugins/dataTableButtons/buttons.flash.min.js"></script>
+	<script type="text/javascript" src="../plugins/dataTableButtons/buttons.colVis.min.js"></script>
+	<script type="text/javascript" src="../plugins/dataTableButtons/jszip.min.js"></script>
+	<script type="text/javascript" src="../plugins/dataTableButtons/pdfmake.min.js"></script>
+	<script type="text/javascript" src="../plugins/dataTableButtons/vfs_fonts.js"></script>
+	<script type="text/javascript" src="../plugins/dataTableButtons/buttons.html5.min.js"></script>
+	<script type="text/javascript" src="../plugins/dataTableButtons/buttons.print.min.js"></script>
+    <!-- Select2 -->
+	<script src="../plugins/select2/select2.full.min.js"></script>
+	
+	<script type= "text/javascript">
+		$(document).ready(function() {
+			$('#example1').DataTable( {
+				"language"                : {
+						// "url"          : "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+						"url"             : "../plugins/datatables/langauge/Spanish.json"
+					},
+				"order"                   : [[ 0, "asc" ]],
+				"paging"                  : true,
+				"ordering"                : true,
+				"info"                    : true,
+				"responsive"              : true,
+				"searching"               : true,
+				"pagingType"              : "full_numbers",
+				stateSave                 : false,
+				dom                      : 'Bfrtip',
+				lengthMenu               : [
+					[ 10, 25, 50, -1 ],
+					[ '10 Registros', '25 Registros', '50 Registros', 'Todos' ],
+				],
+				columnDefs                : [ {
+					// targets           : 0,
+					// visible           : false
+				}],
+				buttons                  : [
+
+						{
+							extend       : 'excel',
+							text         : "<i class='far fa-file-excel'></i> Exportar a Excel",
+							className    : 'btn btn-form  btn-flat',
+							title        : 'Lista',
+							exportOptions: {
+								columns  : ':visible'
+							}
+						},
+						{
+							extend       : 'pdf',
+							text         : "<i class='far fa-file-pdf'></i> Crear PDF",
+							className    : 'btn btn-form  btn-flat',
+							title        : 'Lista',
+							exportOptions: {
+								columns  : ':visible'
+							}
+						},
+						{
+							text         : "<i class='far fa-file'></i> Nuevo Registro",
+							className    : 'btn btn-form  btn-flat',
+							action       : function (  ) {
+								window.location="nuevo.php"
+							},
+							counter      : 1
+						},
+				]
+			} );
+		} );
+	</script>
+
+	<script>
+		$(function () {
+			$(".select2").select2();
+			
+		});
+	</script> 
+
+</body>
+</html>
